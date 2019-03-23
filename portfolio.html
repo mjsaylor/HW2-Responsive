@@ -7,26 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-    <link rel="stylesheet" type="text/css" href="../Basic-Portfolio/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../HW2-Responsive/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abel|Boogaloo|Sigmar+One|Staatliches" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <nav>
-            <div class="logo">Maggie Jo Saylor</div>
-            <div class="nav-links">
-                <a href="index.html">About</a>
-                <span>|</span>
-                <a href="portfolio.html">Portfolio</a>
-                <span>|</span>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
-    </div>
+        <header id="masthead">
+                <div class="container">
+                    <div class="logo">Maggie Jo Saylor</div>
+                    <nav>
+                        <a href="index.html">About</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </header>
 
     <main>
-        <section class="mainContent">
+            <div id="main-container" class="container">
+                    <section class="mainContent">
             <h2>Portfolio</h2>
             <hr></hr>
             <ul class="project-list">
@@ -40,7 +39,7 @@
                 </li>
                 <li class="card">
                 <img src="https://picsum.photos/300/200?image=979" class="project-image">
-                    <div class="caption">Trivia Game</h3>
+                    <h3 class="caption">Trivia Game</h3>
                 </li>
                 <li class="card">
                 <img src="https://picsum.photos/300/200?image=998" class="project-image">
@@ -51,7 +50,8 @@
                     <h3 class="caption">Rock Paper Scissors</h3>
                 </li>
             </ul>
-        </section>
+            </section>
+        </div>
     </main> 
 
     <footer>Copyright 2019</footer>   
