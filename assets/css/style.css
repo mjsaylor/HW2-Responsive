@@ -192,8 +192,9 @@ textarea {
     border-color: #8550b1;
     border-radius: 8px;
     height: 200px;
+    width: 200px;
     float: left;
-    margin: 0px 18px 4px 30px;
+    margin: 0px 30px 0px 30px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -202,25 +203,24 @@ textarea {
     -ms-filter: "FlipH";
 }
 
+div img {
+    height: 200px;
+    width: 300px;
+    border-width: 5px;
+    border-color: #8550b1;
+    border-radius: 8px;
+    border-style:solid;
+}
 .card {
     position: relative;
     float: left;
     height: 200px;
     width: 300px;
     margin: 15px 30px 15px 30px;
-    border-style:solid;
-    border-width: 5px;
-    border-color: #8550b1;
-    border-radius: 8px;
+    overflow: auto;
 }
-.project-image {
-    width: 100%;
-}
-
 .caption {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     left: 0;
     right: 0;
     bottom: 12px;
@@ -230,7 +230,7 @@ textarea {
     text-align:right;
     font-size: 20px;
     letter-spacing: 2px;
-
+    padding-right: 10px;
 }
 
   footer {
@@ -243,10 +243,35 @@ textarea {
     text-align: center;
     background: #666666;
     border-top: 8px solid #8550b1;
-    height: 50px;
+    /* height: 50px; */
   }
+@media screen and (max-width: 980px) and (min-width: 769px) {
 
-  @media screen and (max-width: 640px) {
+.container {
+    width: 90%;
+}
+
+.mainContent {
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+
+.container {
+    width: 90%;
+}
+input,
+textarea {
+    width: 100%;
+}  
+
+    }
+
+
+
+@media screen and (max-width: 640px) {
 
 .logo {
     width: 100%;
@@ -269,8 +294,6 @@ nav {
 #meimage {
     width: 80%;
     height: inherit;
-    /* margin-left: auto; */
-    margin-right: auto;
 }
 
 .mainContent {
@@ -281,9 +304,9 @@ nav {
     margin-top: auto;
 }
 
+input,
+textarea {
+    width: 100%;
+}
 
-
-
-
-
-  }
+    }
