@@ -192,14 +192,15 @@ div img {
     position: relative;
     float: left;
     height: 200px;
-    width: 300px;
+    width: 250px;
     margin: 15px 30px 15px 30px;
 }
 
 .caption {
     position: absolute;
-    left: 0;
-    right: 0;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     bottom: 12px;
     font-family: 'Staatliches', cursive;
     background-color: #8550b1;
